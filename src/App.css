@@ -1,0 +1,104 @@
+/* 🌈 Base Layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffd6eb, #ff69b4);
+  color: #e81b8f;
+}
+
+/* 🌸 Layout Container */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* 🌷 Sidebar */
+.sidebar {
+  width: 240px;
+  background: rgba(255, 240, 247, 0.9); /* Light pink glassy */
+  backdrop-filter: blur(10px);
+  border-right: 3px solid #ff69b4;
+  box-shadow: 2px 0 10px rgba(255, 105, 180, 0.2);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar h2 {
+  color: #e81b8f;
+  font-size: 1.3rem;
+  margin-bottom: 1.8rem;
+  text-align: left;
+}
+
+/* 🌸 Sidebar Links */
+.sidebar a {
+  text-decoration: none;
+  color: #ff00a6;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 8px 0;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #ec4899;
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.6);
+}
+
+/* 🌼 Main Content Area */
+.content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+/* 🧁 Card Glow */
+.card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid #ff69b4;
+  border-radius: 18px;
+  padding: 1.8em;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff69b4, 0 0 35px rgba(255, 20, 147, 0.5);
+}
+
+/* 💕 Buttons */
+button {
+  background: linear-gradient(to right, #ff66b2, #ff3385);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 51, 133, 0.4);
+}
+
+/* ✨ Links inside content */
+a {
+  color: #a855f7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ffb3ff;
+  text-shadow: 0 0 8px #ff66ff, 0 0 16px #66ccff;
+}
